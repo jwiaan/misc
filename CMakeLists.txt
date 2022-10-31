@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+project(test)
+add_compile_options(-Wall)
+add_subdirectory(googletest)
+add_executable(${PROJECT_NAME} test.cc)
+target_link_libraries(${PROJECT_NAME} gtest_main)
